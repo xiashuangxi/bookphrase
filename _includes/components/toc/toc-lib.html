@@ -1,0 +1,51 @@
+{% capture tocWorkspace %}
+    {% assign title = include.title | default: "目录："%}
+    {% assign minHeader = 1 %}
+    {% assign maxHeader = 6 %}
+    {% assign nodes = include.html | split: '<h' %}
+    {% assign orderedList = include.ordered | default: false %}
+    {% assign firstHeader = true %}
+
+    {% capture listModifier %}{% if orderedList %}1.{% else %}-{% endif %}{% endcapture %}
+    {% assign hCount = 0 %}
+
+    {% for node in nodes %}
+        {% if node == "" %}
+            {% continue %}
+        {% endif %}
+
+        {% assign headerLevel = node | replace: '"' , '' | slice: 0, 1 | times: 1 %}
+
+        {% if headerLevel < minHeader or headerLevel > maxHeader %}
+            {% continue %}
+        {% endif %}
+
+        {% if firstHeader %}
+            {% assign firstHeader = false %}
+            {% assign minHeader = headerLevel %}
+        {% endif %}
+        
+        {% assign indentAmount = headerLevel | minus: minHeader %}
+        {% assign _workspace = node | split: '</h' %}
+
+        {% assign _idWorkspace = _workspace[0] | split: 'id="' %}
+        {% assign _idWorkspace = _idWorkspace[1] | split: '"' %}
+        {% assign html_id = _idWorkspace[0] %}
+
+        {% capture _hAttrToStrip %}{{ _workspace[0] | split: '>' | first }}>{% endcapture %}
+        {% assign header = _workspace[0] | replace: _hAttrToStrip, '' %}
+        {% assign hCount = hCount | plus: 1 %}
+
+        {% assign space = '' %}
+        {% for i in (1..indentAmount) %}
+            {% assign space = space | prepend: '    ' %}
+        {% endfor %}
+
+        
+{% capture toc %}{{ toc }}
+{{ space }}{{listModifier}} {{header}}{% endcapture %}
+       
+    {% endfor %}
+{% endcapture %}{% assign tocWorkspace = '' %}
+{{title}}
+{{ toc | markdownify }}

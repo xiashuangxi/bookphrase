@@ -1,0 +1,5 @@
+- title: 首页
+  url: /
+
+- title: 分类
+  dynitem: app:category

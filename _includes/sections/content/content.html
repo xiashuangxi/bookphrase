@@ -1,0 +1,21 @@
+<div class="post-container">
+    <div class="post-container-inner">
+        <div class="container-title">
+            帖子
+        </div>
+
+        <ul class="post-list">
+            {% for post in site.posts %}
+            <li>
+                <a href="{{post.url}}">
+                    <div class="list-item">
+                        <div class="post-title">{{post.title}}</div>
+                        <!-- <div class="post-span">厅</div> -->
+                        <div class="post-date">{{post.date | date: "%Y/%m/%d"}}</div>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
