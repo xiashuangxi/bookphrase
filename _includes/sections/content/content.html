@@ -1,4 +1,4 @@
-<div class="post-container">
+<!-- <div class="post-container">
     <div class="post-container-inner">
         <div class="container-title">
             帖子 
@@ -9,12 +9,58 @@
                 <a href="{{baseurl}}{{post.url}}">
                     <div class="list-item">
                         <div class="post-title">{{post.title}}</div>
-                        <!-- <div class="post-span">厅</div> -->
                         <div class="post-date">{{post.date | date: "%Y/%m/%d"}}</div>
                     </div>
                 </a>
             </li>
             {% endfor %}
         </ul>
+    </div>
+</div> -->
+
+
+<div class="post-container">
+    <div class="post-container-inner">
+        <!-- <div class="post-meta">
+            <div class="post-meta-inner">
+                <ul>
+                    <li>
+                        <div>分类：</div>
+                        <div>{{page.category}}</div>
+                    </li>
+                    <li>
+                        <div>发布日期：</div>
+                        <div>2020/05/10</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Xia Shuangxi</li>
+                </ul>
+            </div> 
+        </div>-->
+        <div class="post-content">
+            <div class="post-content-title">{{ site.title }}</div>
+            <div class="post-content-article-content">
+                <h3>简介</h3>
+                <p>{{ site.description }} 您可以在<a href="{{site.github.repository_url}}">Github</a>上找到该网站的源码，也可以在这里打开问题来讨论帖子。</p>
+                {% assign post_size = site.posts | size %}
+                
+                {% if post_size > 0 %}
+                <h3>帖子</h3>
+                <ul class="post-list">
+                    {% for post in site.posts %}
+                    <li>
+                        <a title="{{post.title}}" href="{{baseurl}}{{post.url}}">
+                            <div class="list-item">
+                                <div class="post-title">{{post.title}}</div>
+                                <div class="post-date">{{post.date | date: "%Y/%m/%d"}}</div>
+                            </div>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
     </div>
 </div>

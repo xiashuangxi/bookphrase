@@ -20,6 +20,7 @@ a:hover>*{
     background-color: dodgerblue;
     color: white;
     text-decoration: none;
+    /* font-weight: bold; */
 }
 
 .wrapper {
@@ -45,22 +46,48 @@ a:hover>*{
 
 .header-inner .header-title {
     font-weight: 800;
+    padding: var(--default-padding-tb) 0px;
+    justify-content: center;
+    display: flex;
+    font-weight: 800;
 }
-
+.header-inner .header-line-bar{
+    padding: var(--default-padding-tb) 0px;
+}
+.header-inner .header-line-bar::after{
+    content: " ";
+    height: 2px;
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+/* 
 .header-inner .header-title::after{
     content: " ";
     height: 2px;
     display: flex;
     width: 100%;
     background-color: black;
-    margin: var(--default-padding-tb) 0px;
+} */
+.header-inner h3,
+.header-inner .header-meta{
+    padding-left: 24px;
 }
-
-.header-inner .header-meta ,
+.header-inner h3::before
+{
+    content: "#";
+    margin-left: -24px;
+    width: 24px;
+    display: inline-block;
+}
+/* .header-inner .header-meta ,
 .header-inner .header-label {
     padding:  6px 0px;
+    padding-left: 24px;
+} */
+.header-inner .header-navigation{
+    margin: var(--default-padding-tb) 0px;
 }
-
 .header-inner .header-navigation::after{
     content: " ";
     height: 2px;
@@ -87,8 +114,8 @@ a:hover>*{
 }
 
 .post-container .post-container-inner{
-    padding: var( --default-padding-tb ) 0px;
-    
+    padding: 0px;
+    padding-bottom: var(--default-padding-tb);
 }
 
 .post-container .post-container-inner .container-title{
@@ -108,9 +135,7 @@ a:hover>*{
 
 .post-container-inner .post-list .list-item {
     align-items: center;
-    display: flex;
-
-    
+    display: flex;   
 }
  
 .post-container-inner .post-list .list-item .post-title {
@@ -150,6 +175,7 @@ a:hover>*{
 
 .post-meta-inner ul li{
     display: flex;
+    justify-content: flex-end;
 }
 
 .post-meta-inner ul li div:first-child{
@@ -169,14 +195,14 @@ a:hover>*{
     padding: 0px;
     padding-left: 24px;
 }
-
+.header-inner h3,
 .post-content .post-content-article-content h1,
 .post-content .post-content-article-content h2,
 .post-content .post-content-article-content h3,
 .post-content .post-content-article-content h4,
 .post-content .post-content-article-content h5,
 .post-content .post-content-article-content h6{
-    font-size: 1rem;
+    font-size: 1em;
     font-family: monospace;
 }
 

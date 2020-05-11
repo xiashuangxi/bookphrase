@@ -10,6 +10,8 @@ permalink: /blog/posts/:year/:month/:day/:title:output_ext
 # (string) logo 的 URL
 logo_url: 
 
+author: "Xia Shuangxi"
+
 # (string) 博客文件的目录
 blog_folder: "blogs"
 
@@ -25,7 +27,6 @@ defaults:
       path: ""
     values:
       layout: "site-default"
-      author: "XIA.SHUANGXI"
  -
     scope:
       path: ""
@@ -44,4 +45,3 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-github-metadata
-  # - jekyll-spaceship

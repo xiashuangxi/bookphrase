@@ -1,11 +1,123 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:1236/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:1236/" rel="alternate" type="text/html" /><updated>2020-05-11T23:54:07+08:00</updated><id>http://localhost:1236/feed.xml</id><title type="html">Xia Shuangxi 的只言片语</title><subtitle>有关各种编程的主题碎语。有些可能写的不好，有些可能是比较不合实际的想法。不能保证所有的这些都是有用的。</subtitle><entry><title type="html">This Rust Hello World Code</title><link href="http://localhost:1236/blog/posts/2020/05/11/xxxxx.html" rel="alternate" type="text/html" title="This Rust Hello World Code" /><published>2020-05-11T00:00:00+08:00</published><updated>2020-05-11T00:00:00+08:00</updated><id>http://localhost:1236/blog/posts/2020/05/11/xxxxx</id><content type="html" xml:base="http://localhost:1236/blog/posts/2020/05/11/xxxxx.html">&lt;p&gt;oooooooooo
-fasd&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:1236/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:1236/" rel="alternate" type="text/html" /><updated>2020-05-12T01:13:01+08:00</updated><id>http://localhost:1236/feed.xml</id><title type="html">Xia Shuangxi 的只言片语</title><subtitle>有关各种编程的主题碎语。有些可能写的不好，有些可能是比较不合实际的想法。不能保证所有的这些都是有用的。</subtitle><author><name>Xia Shuangxi</name></author><entry><title type="html">This Rust Hello World Code</title><link href="http://localhost:1236/blog/posts/2020/05/11/xxxxx.html" rel="alternate" type="text/html" title="This Rust Hello World Code" /><published>2020-05-11T00:00:00+08:00</published><updated>2020-05-11T00:00:00+08:00</updated><id>http://localhost:1236/blog/posts/2020/05/11/xxxxx</id><content type="html" xml:base="http://localhost:1236/blog/posts/2020/05/11/xxxxx.html">&lt;h1 id=&quot;status-of-this-memo&quot;&gt;Status of this Memo&lt;/h1&gt;
 
-&lt;p&gt;$ a * b = c ^ b $&lt;/p&gt;
+&lt;p&gt;This document specifies an Internet standards track protocol for the
+   Internet community, and requests discussion and suggestions for
+   improvements.  Please refer to the current edition of the “Internet
+   Official Protocol Standards” (STD 1) for the standardization state
+   and status of this protocol.  Distribution of this memo is unlimited.&lt;/p&gt;
 
-&lt;p&gt;$ 2 ^ { \ f rac {n-1} {3}} $&lt;/p&gt;
+&lt;h1 id=&quot;copyright-notice&quot;&gt;Copyright Notice&lt;/h1&gt;
 
-&lt;p&gt;&amp;lt;img src=”data:image/png;base64, -e “@startuml
-“&amp;gt;
-&amp;lt;img src=”data:image/png;base64, -e “@startuml
-“&amp;gt;&lt;/p&gt;</content><author><name>XIA.SHUANGXI</name></author><summary type="html">oooooooooo fasd</summary></entry></feed>
+&lt;p&gt;Copyright (C) The Internet Society (2002).  All Rights Reserved.&lt;/p&gt;
+
+&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+
+&lt;p&gt;This document describes Session Initiation Protocol (SIP), an
+   application-layer control (signaling) protocol for creating,
+   modifying, and terminating sessions with one or more participants.
+   These sessions include Internet telephone calls, multimedia
+   distribution, and multimedia conferences.&lt;/p&gt;
+
+&lt;p&gt;SIP invitations used to create sessions carry session descriptions
+   that allow participants to agree on a set of compatible media types.
+   SIP makes use of elements called proxy servers to help route requests
+   to the user’s current location, authenticate and authorize users for
+   services, implement provider call-routing policies, and provide
+   features to users.  SIP also provides a registration function that
+   allows users to upload their current locations for use by proxy
+   servers.  SIP runs on top of several different transport protocols.&lt;/p&gt;
+
+&lt;p&gt;Gateway Control Protocol (MEGACO) (RFC 3015 [30]) for controlling
+   gateways to the Public Switched Telephone Network (PSTN), and the
+   Session Description Protocol (SDP) (RFC 2327 [1]) for describing
+   multimedia sessions.  Therefore, SIP should be used in conjunction
+   with other protocols in order to provide complete services to the
+   users.  However, the basic functionality and operation of SIP does
+   not depend on any of these protocols.&lt;/p&gt;
+
+&lt;p&gt;SIP does not provide services.  Rather, SIP provides primitives that
+   can be used to implement different services.  For example, SIP can
+   locate a user and deliver an opaque object to his current location.
+   If this primitive is used to deliver a session description written in
+   SDP, for instance, the endpoints can agree on the parameters of a
+   session.  If the same primitive is used to deliver a photo of the
+   caller as well as the session description, a “caller ID” service can
+   be easily implemented.  As this example shows, a single primitive is
+   typically used to provide several different services.&lt;/p&gt;
+
+&lt;p&gt;SIP does not offer conference control services such as floor control
+   or voting and does not prescribe how a conference is to be managed.
+   SIP can be used to initiate a session that uses some other conference
+   control protocol.  Since SIP messages and the sessions they establish
+   can pass through entirely different networks, SIP cannot, and does
+   not, provide any kind of network resource reservation capabilities.&lt;/p&gt;
+
+&lt;p&gt;The nature of the services provided make security particularly
+   important.  To that end, SIP provides a suite of security services,
+   which include denial-of-service prevention, authentication (both user
+   to user and proxy to user), integrity protection, and encryption and
+   privacy services.&lt;/p&gt;
+
+&lt;p&gt;SIP works with both IPv4 and IPv6.&lt;/p&gt;
+
+&lt;h1 id=&quot;3-terminology&quot;&gt;3 Terminology&lt;/h1&gt;
+
+&lt;p&gt;In this document, the key words “MUST”, “MUST NOT”, “REQUIRED”,
+   “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “NOT
+   RECOMMENDED”, “MAY”, and “OPTIONAL” are to be interpreted as
+   described in BCP 14, RFC 2119 [2] and indicate requirement levels for
+   compliant SIP implementations.&lt;/p&gt;
+
+&lt;h1 id=&quot;4-overview-of-operation&quot;&gt;4 Overview of Operation&lt;/h1&gt;
+
+&lt;p&gt;This section introduces the basic operations of SIP using simple
+   examples.  This section is tutorial in nature and does not contain
+   any normative statements.&lt;/p&gt;
+
+&lt;p&gt;Rosenberg, et. al.          Standards Track                    [Page 10]&lt;/p&gt;
+
+&lt;p&gt;RFC 3261            SIP: Session Initiation Protocol           June 2002&lt;/p&gt;
+
+&lt;p&gt;The first example shows the basic functions of SIP: location of an
+   end point, signal of a desire to communicate, negotiation of session
+   parameters to establish the session, and teardown of the session once
+   established.&lt;/p&gt;
+
+&lt;p&gt;Figure 1 shows a typical example of a SIP message exchange between
+   two users, Alice and Bob.  (Each message is labeled with the letter
+   “F” and a number for reference by the text.)  In this example, Alice
+   uses a SIP application on her PC (referred to as a softphone) to call
+   Bob on his SIP phone over the Internet.  Also shown are two SIP proxy
+   servers that act on behalf of Alice and Bob to facilitate the session
+   establishment.  This typical arrangement is often referred to as the
+   “SIP trapezoid” as shown by the geometric shape of the dotted lines
+   in Figure 1.&lt;/p&gt;
+
+&lt;p&gt;Alice “calls” Bob using his SIP identity, a type of Uniform Resource
+   Identifier (URI) called a SIP URI. SIP URIs are defined in Section
+   19.1.  It has a similar form to an email address, typically
+   containing a username and a host name.  In this case, it is
+   sip:bob@biloxi.com, where biloxi.com is the domain of Bob’s SIP
+   service provider.  Alice has a SIP URI of sip:alice@atlanta.com.
+   Alice might have typed in Bob’s URI or perhaps clicked on a hyperlink
+   or an entry in an address book.  SIP also provides a secure URI,
+   called a SIPS URI.  An example would be sips:bob@biloxi.com.  A call
+   made to a SIPS URI guarantees that secure, encrypted transport
+   (namely TLS) is used to carry all SIP messages from the caller to the
+   domain of the callee.  From there, the request is sent securely to
+   the callee, but with security mechanisms that depend on the policy of
+   the domain of the callee.&lt;/p&gt;
+
+&lt;p&gt;SIP is based on an HTTP-like request/response transaction model.
+   Each transaction consists of a request that invokes a particular
+   method, or function, on the server and at least one response.  In
+   this example, the transaction begins with Alice’s softphone sending
+   an INVITE request addressed to Bob’s SIP URI.  INVITE is an example
+   of a SIP method that specifies the action that the requestor (Alice)
+   wants the server (Bob) to take.  The INVITE request contains a number
+   of header fields.  Header fields are named attributes that provide
+   additional information about a message.  The ones present in an
+   INVITE include a unique identifier for the call, the destination
+   address, Alice’s address, and information about the type of session
+   that Alice wishes to establish with Bob.  The INVITE (message F1 in
+   Figure 1) might look like this:&lt;/p&gt;</content><author><name>Xia Shuangxi</name></author><summary type="html">Status of this Memo</summary></entry></feed>

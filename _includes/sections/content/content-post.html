@@ -7,17 +7,33 @@
                         <div>讨论数：</div>
                         <div><a href="#">2323</a></div>
                     </li> -->
+                    {% if page.category %}
                     <li>
                         <div>分类：</div>
                         <div>{{page.category}}</div>
                     </li>
+                    {% endif %}
                     <li>
                         <div>发布日期：</div>
                         <div>2020/05/10</div>
                     </li>
                 </ul>
                 <ul>
-                    <li>Xia Shuangxi</li>
+
+                    {% if page.authors %}
+                        {% for item in page.authors %}
+                            <li>
+                                
+                                {% if item.author[1] %}
+                                    <a href="mailto:{{item.author[1]}}">{{item.author[0]}}</a>
+                                {% else %}
+                                    {{item.author[0]}}
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    {% else %}
+                    <li>{{ site.author }}</li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
