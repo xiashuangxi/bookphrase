@@ -3,13 +3,13 @@
         <div class="post-meta">
             <div class="post-meta-inner">
                 <ul>
-                    <li>
+                    <!-- <li>
                         <div>讨论数：</div>
                         <div><a href="#">2323</a></div>
-                    </li>
+                    </li> -->
                     <li>
                         <div>分类：</div>
-                        <div>Rust</div>
+                        <div>{{page.category}}</div>
                     </li>
                     <li>
                         <div>发布日期：</div>
@@ -21,15 +21,6 @@
                 </ul>
             </div>
         </div>
-
-        【{{ site.github.repository_url }}】<br>
-        【{{ site.github.owner_url }}】<br>
-        【{{site.github.build_servision}}】<br>
-        【{{site.github.repository_name}}】<br>
-        【{{site.github.url}}】<br>
-        【{{site.github.pages_hostname}}】<br>
-        ======================================<br>
-        【{{baseurl}}】<br>
         <div class="post-content">
             <div class="post-content-title">{{ page.title }}</div>
             <div class="post-content-article-content">{{ content }}</div>

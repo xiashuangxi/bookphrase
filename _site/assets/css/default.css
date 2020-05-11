@@ -103,7 +103,7 @@ a:hover>*{
     /* padding: 0 1rem; */
     padding: 0;
     padding-left: 1rem;
-    list-style: "~ ";
+    list-style: "- ";
 }
 
 .post-container-inner .post-list .list-item {

@@ -1,19 +1,19 @@
 <div class="header-navigation">
     <ul>
         <li>
-            [<a href="{{baseurl}}" title="返回网站首页">首页</a>]
+            [<a href="{{baseurl}}/index.html" title="返回网站首页">首页</a>]
         </li>
-        <li>
+        <!-- <li>
             [<a href="/" title="导出txt文件格式">txt</a>|<a href="/" title="导出pdf文件格式">pdf</a>]
         </li>
         <li>
             [<a href="/" title="参与文章的讨论">讨论</a>]
-        </li>
+        </li> -->
         <li>
-            [<a href="/" title="文章更新记录">更新记录</a>]
+            [<a target="_blank" href="{{ site.github.repository_url }}/commits/master/{{page.path | escape}}" title="文章更新记录">更新记录</a>]
         </li>
-        <li>
+        <!-- <li>
             [<a href="/" title="文章差异">差异</a>]
-        </li>
+        </li> -->
     </ul>
 </div>
