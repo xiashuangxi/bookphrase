@@ -40,8 +40,10 @@ defaults:
     values:
       layout: "site-post"    
 
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-github-metadata
+  # - jekyll-paginate

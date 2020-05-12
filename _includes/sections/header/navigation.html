@@ -16,7 +16,21 @@
             [<a href="/" title="文章差异">差异</a>]
         </li> -->
         <li>
-            [<a target="_blank" href="{{ site.github.repository_url }}/edit/master/{{page.path | escape}}" title="编辑文章" title="文章差异">编辑</a>]
+            [<a target="_blank" href="{{ site.github.repository_url }}/new/master/_posts?filename=" title="添加文章">添加</a>]
         </li>
+        <li>
+            [<a target="_blank" href="{{ site.github.repository_url }}/edit/master/{{page.path | escape}}" title="文章差异">编辑</a>]
+        </li>
+    
+        <li>
+            [<a href="{{baseurl}}{% include components/pages/pages.html title=page.title obj='previous' opt='url' %}" title="上一篇文章">上一篇</a>]
+        </li>
+    
+       
+    
+        <li>
+            [<a href="{{baseurl}}{% include components/pages/pages.html title=page.title obj='next' opt='url' %}" title="下一篇文章">下一篇</a>]
+        </li>
+    
     </ul>
 </div>

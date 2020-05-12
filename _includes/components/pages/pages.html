@@ -1,0 +1,4 @@
+{% assign opt = include.opt | default: 'url' %}
+{% assign obj = include.obj | default: 'current' %}
+
+{% include components/pages/pages-lib.html title=include.title obj=obj opt=opt %}

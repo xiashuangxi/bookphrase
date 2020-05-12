@@ -1,0 +1,79 @@
+{% capture pages %}
+    {% comment %}
+        version 0.0.1
+
+        得到基于当前面页的上一篇文章和下一篇文章链接
+
+        使用：
+            {% include pages.html title=title obj='current' opt='next' %}
+        
+        参数：
+            * title         (string) :                  - 文章标题
+            * obj           (string) :
+                - current: 当前文章
+                - previous: 上一篇文章
+                - next: 下一篇文章
+            * opt           (string) ： 
+                - url : 链接
+                - title: 标题
+        
+        输出：
+            根据传入的 obj 参数和 opt 参数返回文章对应的项。
+    {% endcomment %}
+
+    {% assign title = include.title | default: nil %}    
+    【Title: {{title}} | Opt: {{opt}}】
+
+    {% assign current_index = 0 %}
+    {% assign posts = site.posts %}
+    {% assign posts_size = posts | size %}
+
+    
+    {% if title != nil %}
+        {% for p in posts %}
+            {% if p.title == title %}
+                {% break %}
+            {% endif %}
+            {% assign current_index = current_index | plus: 1 %}
+        {% endfor %}
+    {% endif %}
+    
+    【{{ current_index }}】
+
+    {% capture current_title %}{{posts[current_index].title }}{% endcapture %}
+    {% capture current_url %}{{posts[current_index].url }}{% endcapture %}
+
+    {% assign next_index = current_index | plus: 1 %}
+    {% if next_index >= posts_size %}
+        {% assign next_index = 0 %}
+    {% endif %}
+    {% capture next_title %}{{posts[next_index].title }}{% endcapture %}
+    {% capture next_url %}{{posts[next_index].url }}{% endcapture %}
+
+    
+    {% assign previous_index = current_index | plus: -1 %}
+    {% if previous_index < 0 %}
+        {% assign previous_index = posts_size | plus: -1 %}
+    {% endif %}
+    {% capture previous_title %}{{posts[previous_index].title }}{% endcapture %}
+    {% capture previous_url %}{{posts[previous_index].url }}{% endcapture %}
+
+{% endcapture %}
+
+{% if obj == 'current' %}
+    {% if opt == 'url' %}{{current_url}}{% endif %}
+    {% if opt == 'title' %}{{current_title}}{% endif %}
+{% endif %}
+
+{% if obj == 'previous' %}
+    {% if opt == 'url' %}{{previous_url}}{% endif %}
+    {% if opt == 'title' %}{{previous_title}}{% endif %}
+{% endif %}
+
+{% if obj == 'next' %}
+    {% if opt == 'url' %}{{next_url}}{% endif %}
+    {% if opt == 'title' %}{{next_title | strip}}{% endif %}
+{% endif %}
+
+
+
