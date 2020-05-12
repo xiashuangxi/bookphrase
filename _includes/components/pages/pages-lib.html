@@ -61,18 +61,18 @@
 {% endcapture %}
 
 {% if obj == 'current' %}
-    {% if opt == 'url' %}{{current_url}}{% endif %}
-    {% if opt == 'title' %}{{current_title}}{% endif %}
+{% if opt == 'url' %}{{current_url}}{% endif %}
+{% if opt == 'title' %}{{current_title}}{% endif %}
 {% endif %}
 
 {% if obj == 'previous' %}
-    {% if opt == 'url' %}{{previous_url}}{% endif %}
-    {% if opt == 'title' %}{{previous_title}}{% endif %}
+{% if opt == 'url' %}{{previous_url}}{% endif %}
+{% if opt == 'title' %}{{previous_title}}{% endif %}
 {% endif %}
 
 {% if obj == 'next' %}
-    {% if opt == 'url' %}{{next_url}}{% endif %}
-    {% if opt == 'title' %}{{next_title | strip}}{% endif %}
+{% if opt == 'url' %}{{next_url}}{% endif %}
+{% if opt == 'title' %}{{next_title | strip}}{% endif %}
 {% endif %}
 
 
