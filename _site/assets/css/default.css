@@ -156,13 +156,14 @@ a:hover>*{
 .post-container-inner .post-list .list-item .post-title::after{
     content: "...................................................................................................................................................................................................................................................................................";
     position: absolute;
-    /* padding: 0 4px; */
+    padding-left: var(--default-padding-tb);
     line-height: 1rem;
 }
  
 .post-container-inner .post-list .list-item .post-date {
     /* width: 100px; */
     text-align: end;
+    padding-left: var(--default-padding-tb);
 }
 
 .post-container-inner .post-meta{
@@ -224,6 +225,20 @@ a:hover>*{
     margin-left: -24px;
     width: 24px;
     display: inline-block;
+}
+
+.post-content .footnotes::before {
+    content: " ";
+    height: 1px;
+    background-color: #00000080;
+    width: 20%;
+    padding: 0px;
+    display: block;
+}
+.post-content .footnotes ol {
+    padding: 0;
+    padding-left: 24px;
+
 }
 
 /* .post-meta-inner ul li div:last-child{
