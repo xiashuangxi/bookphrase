@@ -117,7 +117,9 @@ a:hover>*{
 }
 
 .post-container {
-    width: 100%;    
+    width: 100%;  
+    background-color: white;  
+    border: none;
 }
 
 .post-container .post-container-inner{
@@ -183,14 +185,24 @@ a:hover>*{
 
 .post-meta-inner ul li{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
+.post-meta-inner ul:first-child li{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.post-meta-inner ul:last-child li{
+    display: flex;
+    justify-content: flex-end;
+}
+/* 
 .post-meta-inner ul li div:first-child{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
+} */
 
 .post-content .post-content-title {
     padding: 12px 0;

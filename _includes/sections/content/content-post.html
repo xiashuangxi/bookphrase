@@ -1,4 +1,4 @@
-<div class="post-container">
+<div id="post-container" class="post-container">
     <div class="post-container-inner">
         <div class="post-meta">
             <div class="post-meta-inner">
@@ -23,7 +23,6 @@
                     {% if page.authors %}
                         {% for item in page.authors %}
                             <li>
-                                
                                 {% if item.author[1] %}
                                     <a href="mailto:{{item.author[1]}}">{{item.author[0]}}</a>
                                 {% else %}
@@ -32,7 +31,7 @@
                             </li>
                         {% endfor %}
                     {% else %}
-                    <li>{{ site.author }}</li>
+                    <li><a href="mailto:{{site.email}}">{{ site.author }}</a></li>
                     {% endif %}
                 </ul>
             </div>

@@ -11,6 +11,7 @@ permalink: /blog/posts/:year/:month/:day/:title:output_ext
 logo_url: 
 
 author: "Xia Shuangxi"
+email: "xiashuangxi@hotmail.com"
 
 # (string) 博客文件的目录
 blog_folder: "blogs"

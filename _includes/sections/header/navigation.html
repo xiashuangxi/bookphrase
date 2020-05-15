@@ -3,12 +3,12 @@
         <li>
             [<a href="{{baseurl}}/index.html" title="返回网站首页">首页</a>]
         </li>
-        <!-- <li>
-            [<a href="/" title="导出txt文件格式">txt</a>|<a href="/" title="导出pdf文件格式">pdf</a>]
+        <li>
+            [<a href="/" title="导出txt文件格式">txt</a>|<a id="export_pdf" href="#" title="导出pdf文件格式">pdf</a>]
         </li>
         <li>
-            [<a href="/" title="参与文章的讨论">讨论</a>]
-        </li> -->
+            [<a target="_blank" href="{{ site.github.repository_url }}/issues/new" title="参与文章的讨论">讨论</a>]
+        </li> 
         <li>
             [<a target="_blank" href="{{ site.github.repository_url }}/commits/master/{{page.path | escape}}" title="文章更新记录">更新记录</a>]
         </li>
@@ -21,16 +21,18 @@
         <li>
             [<a target="_blank" href="{{ site.github.repository_url }}/edit/master/{{page.path | escape}}" title="编辑文章">编辑</a>]
         </li>
-    
         <li>
             [<a href="{{baseurl}}{% include components/pages/pages.html title=page.title obj='previous' opt='url' %}" title="上一篇文章">上一篇</a>]
         </li>
-    
-       
-    
         <li>
             [<a href="{{baseurl}}{% include components/pages/pages.html title=page.title obj='next' opt='url' %}" title="下一篇文章">下一篇</a>]
         </li>
     
     </ul>
 </div>
+
+<script>
+    document.getElementById("export_pdf").onclick = function() {
+        exportPDF();
+    }
+</script>
