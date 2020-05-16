@@ -18,6 +18,7 @@ a{
 
     border-bottom: dotted dodgerblue 1px;
     padding-bottom: 1px;
+    height: 1rem;
 }
 
 a:hover,
@@ -132,6 +133,7 @@ a::after{
 
 .header-inner .header-navigation ul li {
     padding-right: 6px;
+    white-space: nowrap;
 }
 
 .post-container {
@@ -242,6 +244,29 @@ a::after{
 .post-content .post-content-article-content h6{
     font-size: 1em;
     font-family: monospace;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.post-content .post-content-article-content h1::before{
+    content: "#";
+}
+.post-content .post-content-article-content h2::before{
+    content: "##";
+}
+.post-content .post-content-article-content h3::before{
+    content: "###";
+}
+.post-content .post-content-article-content h4::before{
+    content: "####";
+}
+.post-content .post-content-article-content h5::before{
+    content: "#####";
+}
+.post-content .post-content-article-content h6::before{
+    content: "######";
 }
 
 .post-content .post-content-article-content h1::before,
@@ -251,7 +276,6 @@ a::after{
 .post-content .post-content-article-content h5::before,
 .post-content .post-content-article-content h6::before
 {
-    content: "#";
     margin-left: -24px;
     width: 24px;
     display: inline-block;
