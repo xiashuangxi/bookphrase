@@ -15,8 +15,14 @@
                     {% endif %}
                     <li>
                         <div>发布日期：</div>
-                        <div>2020/05/10</div>
+                        <div>{{ page.date |date: "%Y/%m/%d" }}</div>
                     </li>
+                    {% if page.last_update %}
+                    <li>
+                        <div>最近更新日期：</div>
+                        <div>{{ page.last_update | date: "%Y/%m/%d"}}</div>
+                    </li>
+                    {% endif %}
                 </ul>
                 <ul>
 
