@@ -248,16 +248,42 @@ a::after{
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-}
 
+    /* list */
+    /* display: list-item;
+    list-style-type: none; */
+}
+/* .post-content .post-content-article-content{
+    counter-reset: section;
+} */
+
+/* .post-content .post-content-article-content h1 {
+    counter-reset: h1section;
+} */
 .post-content .post-content-article-content h1::before{
     content: "#";
+    /* display: block;
+    counter-increment: section;
+    content: counter(section)". "; */
 }
+
+/* .post-content .post-content-article-content h2 {
+    counter-reset: h2section;
+} */
 .post-content .post-content-article-content h2::before{
     content: "##";
+    /* counter-increment: h1section;
+    content: counter(section)"."counter(h1section)". "; */
 }
+
+/* .post-content .post-content-article-content h3 {
+    counter-reset: h3section;
+} */
 .post-content .post-content-article-content h3::before{
     content: "###";
+    
+    /* counter-increment: h1section; */
+    /* content: counter(section)"."counter(h1section)"."counter(h2section)". "; */
 }
 .post-content .post-content-article-content h4::before{
     content: "####";
@@ -295,50 +321,6 @@ a::after{
 
 }
 
-/* .post-meta-inner ul li div:last-child{
-    background-color:  red;
-} */
-/* 
-.post-content ol{
-    padding: 0;
-    margin: 0;
-
-    counter-reset: section;
-    list-style-type: none;
-}
-
-.post-content ol li{
-    list-style-type: none;
-}
-
-.post-content ol li ol{
-    counter-reset: subsection;
-}
-
-.post-content ol li::before{
-    counter-increment: section;
-    content: counter(section) ". ";
-}
-
-.post-content ol li ol li::before{
-    counter-increment: subsection;
-    content: counter(section) "." counter(subsection) ". ";
-} */
-
-
-
-
-/* .post-content ol.numeric-decimals { counter-reset:section; list-style-type:none; }
-.post-content ol.numeric-decimals li { list-style-type:none; }
-.post-content ol.numeric-decimals li .post-content ol { counter-reset:subsection; }
-.post-content ol.numeric-decimals li:before{
-    counter-increment:section;
-    content:counter(section) ". ";/*content:"Section " counter(section) ". ";*/
-/*}
-ol.numeric-decimals li ol li:before {
-    counter-increment:subsection;
-    content:counter(section) "." counter(subsection) " ";
-} */
 
 .footer {
     border-top: dashed 1px black;
