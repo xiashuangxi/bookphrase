@@ -10,7 +10,11 @@
                     {% if page.category %}
                     <li>
                         <div>分类：</div>
-                        <div>{{page.category}}</div>
+                        <div>
+                            {% for c in page.category%}
+                                <div>{{c}}</div>
+                            {% endfor %}
+                        </div>
                     </li>
                     {% endif %}
                     <li>
