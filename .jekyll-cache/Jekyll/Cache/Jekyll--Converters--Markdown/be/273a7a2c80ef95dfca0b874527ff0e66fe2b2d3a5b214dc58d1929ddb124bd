@@ -1,0 +1,47 @@
+I"�<h1 id="rust相关">Rust相关</h1>
+<p>多个作者发布在网上的独立Rust相关的文章。它们涵盖了Rust的各个方面。</p>
+
+<ol>
+  <li>
+    <p><a href="https://fasterthanli.me/blog/2020/a-half-hour-to-learn-rust/">半小时学习Rust（A half-hour to learn Rust）</a></p>
+
+    <p>作者：Amos Wenger。</p>
+  </li>
+  <li>
+    <p><a href="https://fasterthanli.me/blog/2020/working-with-strings-in-rust/">在Rust中使用字符串（Working with strings in Rust）</a></p>
+
+    <p>作者：Amos Wenger，此文章比较长，需要花比较长的时间进行阅读。</p>
+  </li>
+  <li>
+    <p><a href="https://deterministic.space/secret-life-of-cows.html">Cows的秘密生活（The Secret Life of Cows）</a></p>
+
+    <p>作者：Pascal Hertleif</p>
+  </li>
+  <li>
+    <p><a href="https://theta.eu.org/2016/04/16/lyar-lifetimes.html">Rust学习 III - 生命周期 101（Learn You a Rust III - Lifetimes 101）</a></p>
+  </li>
+</ol>
+
+<h1 id="其他文章">其他文章</h1>
+<ol>
+  <li>
+    <p><a href="https://norvig.com/21-days.html">十年自学编程（Teach Yourself Programming in Ten Years）</a></p>
+
+    <p>针对市面上的一些“21天从入门到精通”编程类书籍的一些看法，并阐述了如何成为一个程序员
+ 的观点。</p>
+
+    <p>作者：Peter Norvig</p>
+  </li>
+  <li>
+    <p><a href="http://officeopenxml.com/SScontentOverview.php">电子表格的内容（Spreadsheet Content Overview）</a></p>
+
+    <p>介绍 Excel 表格的内容构成。</p>
+  </li>
+  <li>
+    <p><a href="https://dzone.com/articles/7-ways-to-boost-your-skills-to-become-a-better-pro">提升技能成为更好程序员的7种方法</a></p>
+
+    <p>作者：Ralf Gallano</p>
+  </li>
+</ol>
+
+:ET

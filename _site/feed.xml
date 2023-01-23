@@ -1,75 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:1236/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:1236/" rel="alternate" type="text/html" /><updated>2021-01-21T00:11:01+08:00</updated><id>http://localhost:1236/feed.xml</id><title type="html">Xia Shuangxi 的只言片语</title><subtitle>有关各种各样的主题，当然也有一些编程主题的碎语。有些可能写的不好，有些可能是比较不合实际的想法。不能保证所有的这些都是有用的。</subtitle><author><name>Xia Shuangxi</name></author><entry><title type="html">开闭原则</title><link href="http://localhost:1236/blog/posts/2021/01/20/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99.html" rel="alternate" type="text/html" title="开闭原则" /><published>2021-01-20T00:00:00+08:00</published><updated>2021-01-20T00:00:00+08:00</updated><id>http://localhost:1236/blog/posts/2021/01/20/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99</id><content type="html" xml:base="http://localhost:1236/blog/posts/2021/01/20/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99.html">&lt;h2 id=&quot;动机&quot;&gt;动机&lt;/h2&gt;
-
-&lt;p&gt;开闭原则（Open Close Principle，OCP）的动机，一个良好的应用程序设计应该平衡适应开发和维护阶段的频繁修改。通常，向应用程序添加新功能或修改功能时会涉及许多的修改。应该保证对现有代码的最小化修改，如果现有代码已经通过了单元测试阶段，对此方面的代码修改可能会造成不必要的影响。&lt;/p&gt;
-
-&lt;p&gt;开闭原则中提出：在现有代码中添加新功能应该以最少的代码修改完成代码的设计和编写。设计中应该允许在尽可能保持代码不变以情况下完成成新功能的添加。&lt;/p&gt;
-
-&lt;h2 id=&quot;示例&quot;&gt;示例&lt;/h2&gt;
-
-&lt;p&gt;现在我们编写一个不符合开闭原则的示例。很简单，实现的是一个打印不同动物的信息。这个示例很明显，它不遵守开闭原则，因为在添加一个额外的动物信息时需要修改基本的打印测试类。有以下几个缺点：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;对于每添加一个新的动物信息，都需要修改打印测试类。&lt;/li&gt;
-  &lt;li&gt;添加新的动物信息时做消耗比较多的时间，因为开发人员需要了解这个程序的逻辑。&lt;/li&gt;
-  &lt;li&gt;添加新的功能可能会影响现有功能。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class MainTest {
-    print(Animal a){
-        if a.type == 1{
-            printDog(a)
-        }
-        if a.type == 2 {
-            printCat(a)
-        }
-    }
-    printDog(Dog d){...}
-    printCat(Cat c){...}
-}
-
-class Animal {
-    int type
-}
-
-class Dog extends Animal {
-    Dog(){ super.type ← 1 }
-}
-
-class Cat extends Animal {
-    Cat() { super.type ← 2 }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;现在我们将此程序改成一个符合开闭原则的程序。在新的设计中我们在 &lt;code class=&quot;highlighter-rouge&quot;&gt;Animal&lt;/code&gt; 对象添加一个抽象提 &lt;code class=&quot;highlighter-rouge&quot;&gt;print&lt;/code&gt; 方法，同时在相应的 &lt;code class=&quot;highlighter-rouge&quot;&gt;Dog&lt;/code&gt;、&lt;code class=&quot;highlighter-rouge&quot;&gt;Cat&lt;/code&gt; 中实现此方法。使用开闭原则测试可以避免以上的问题，因为添加新的动物信息时不会再去修改基本测试类了。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;添加新的动物信息时不需要修改测试类。&lt;/li&gt;
-  &lt;li&gt;添加新的动物信息时不需要了解整个逻辑。&lt;/li&gt;
-  &lt;li&gt;添加新的动物信息时也不会影响旧的功能，降低了出错的风险。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class MainTest {
-    print(Animal a){
-        a.print()
-    }
-}
-
-class Animal {
-    abstract print()
-}
-
-class Dog extends Animal {
-    print(){ ... }
-}
-
-class Cat extends Animal {
-    print(){ ... }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;结论&quot;&gt;结论&lt;/h2&gt;
-
-&lt;p&gt;开闭原则只是一个原则。要设计的灵活需要花费更多的精力，并引入抽象等概念，从而增加了代码的复杂性。因为在这个原则应该适用于有可能被改变的地方。&lt;/p&gt;</content><author><name>Xia Shuangxi</name></author><category term="[&quot;\u8F6F\u4EF6\u8BBE\u8BA1\u539F\u5219&quot;]" /><summary type="html">动机</summary></entry><entry><title type="html">计算机编程有关的网络文章</title><link href="http://localhost:1236/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0.html" rel="alternate" type="text/html" title="计算机编程有关的网络文章" /><published>2020-05-15T00:00:00+08:00</published><updated>2020-05-15T00:00:00+08:00</updated><id>http://localhost:1236/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0</id><content type="html" xml:base="http://localhost:1236/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0.html">&lt;h1 id=&quot;rust相关&quot;&gt;Rust相关&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-21T17:01:19+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Xia Shuangxi 的只言片语 (๑•̀ㅂ•́)و✧</title><subtitle>这个博客里记录的着各种主题的文章、知识和信息，也有一些对某些事物的不好或不符合实际的看法。不能保证所有的这些都是客观的和有用的。</subtitle><author><name>Xia Shuangxi</name></author><entry><title type="html">计算机编程有关的网络文章</title><link href="http://localhost:4000/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0.html" rel="alternate" type="text/html" title="计算机编程有关的网络文章" /><published>2020-05-15T00:00:00+08:00</published><updated>2020-05-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0</id><content type="html" xml:base="http://localhost:4000/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0.html">&lt;h1 id=&quot;rust相关&quot;&gt;Rust相关&lt;/h1&gt;
 &lt;p&gt;多个作者发布在网上的独立Rust相关的文章。它们涵盖了Rust的各个方面。&lt;/p&gt;
 
 &lt;ol&gt;
@@ -113,4 +42,4 @@ class Cat extends Animal {
 
     &lt;p&gt;作者：Ralf Gallano&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Xia Shuangxi</name></author><category term="[&quot;\u8BA1\u7B97\u673A&quot;]" /><summary type="html">Rust相关 多个作者发布在网上的独立Rust相关的文章。它们涵盖了Rust的各个方面。</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>Xia Shuangxi</name></author><category term="[&quot;计算机&quot;]" /><summary type="html">Rust相关 多个作者发布在网上的独立Rust相关的文章。它们涵盖了Rust的各个方面。</summary></entry></feed>
