@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-21T17:01:19+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Xia Shuangxi 的只言片语 (๑•̀ㅂ•́)و✧</title><subtitle>这个博客里记录的着各种主题的文章、知识和信息，也有一些对某些事物的不好或不符合实际的看法。不能保证所有的这些都是客观的和有用的。</subtitle><author><name>Xia Shuangxi</name></author><entry><title type="html">计算机编程有关的网络文章</title><link href="http://localhost:4000/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0.html" rel="alternate" type="text/html" title="计算机编程有关的网络文章" /><published>2020-05-15T00:00:00+08:00</published><updated>2020-05-15T00:00:00+08:00</updated><id>http://localhost:4000/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0</id><content type="html" xml:base="http://localhost:4000/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0.html">&lt;h1 id=&quot;rust相关&quot;&gt;Rust相关&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:1236/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:1236/" rel="alternate" type="text/html" /><updated>2023-02-02T23:59:19+08:00</updated><id>http://localhost:1236/feed.xml</id><title type="html">Xia Shuangxi 的只言片语 (๑•̀ㅂ•́)و✧</title><subtitle>这个博客里记录的着各种主题的文章、知识和信息，也有一些对某些事物的不好或不符合实际的看法。不能保证所有的这些都是客观的和有用的。</subtitle><author><name>Xia Shuangxi</name></author><entry><title type="html">计算机编程有关的网络文章</title><link href="http://localhost:1236/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0.html" rel="alternate" type="text/html" title="计算机编程有关的网络文章" /><published>2020-05-15T00:00:00+08:00</published><updated>2020-05-15T00:00:00+08:00</updated><id>http://localhost:1236/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0</id><content type="html" xml:base="http://localhost:1236/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0.html">&lt;h1 id=&quot;rust相关&quot;&gt;Rust相关&lt;/h1&gt;
 &lt;p&gt;多个作者发布在网上的独立Rust相关的文章。它们涵盖了Rust的各个方面。&lt;/p&gt;
 
 &lt;ol&gt;
@@ -19,6 +19,20 @@
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://theta.eu.org/2016/04/16/lyar-lifetimes.html&quot;&gt;Rust学习 III - 生命周期 101（Learn You a Rust III - Lifetimes 101）&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;prolog相关&quot;&gt;Prolog相关&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://andrewcropper.com/&quot;&gt;Andrew Cropper&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;作者：Andrew Cropper，这是一个个人博客，里面多为逻辑编程方面的文献、出版物。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.metalevel.at/prolog&quot;&gt;Prolog的力量（The Power of Prolog）&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;作者：Markus Triska，这里是一个prolog的教程。&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 

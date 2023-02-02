@@ -1,4 +1,4 @@
-I"�<h1 id="rust相关">Rust相关</h1>
+I"i<h1 id="rust相关">Rust相关</h1>
 <p>多个作者发布在网上的独立Rust相关的文章。它们涵盖了Rust的各个方面。</p>
 
 <ol>
@@ -19,6 +19,20 @@
   </li>
   <li>
     <p><a href="https://theta.eu.org/2016/04/16/lyar-lifetimes.html">Rust学习 III - 生命周期 101（Learn You a Rust III - Lifetimes 101）</a></p>
+  </li>
+</ol>
+
+<h1 id="prolog相关">Prolog相关</h1>
+<ol>
+  <li>
+    <p><a href="http://andrewcropper.com/">Andrew Cropper</a></p>
+
+    <p>作者：Andrew Cropper，这是一个个人博客，里面多为逻辑编程方面的文献、出版物。</p>
+  </li>
+  <li>
+    <p><a href="https://www.metalevel.at/prolog">Prolog的力量（The Power of Prolog）</a></p>
+
+    <p>作者：Markus Triska，这里是一个prolog的教程。</p>
   </li>
 </ol>
 
