@@ -219,6 +219,17 @@ a::after{
     display: flex;
     justify-content: flex-end;
 }
+.post-meta-inner .mate-info{
+    width: 6rem;
+    text-align: justify;
+    height: 0.8rem;
+}
+.post-meta-inner .mate-info:after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0px;
+}
 /* 
 .post-meta-inner ul li div:first-child{
     display: flex;
@@ -333,3 +344,4 @@ a::after{
     display: flex;
     justify-content: space-between;
 }
+

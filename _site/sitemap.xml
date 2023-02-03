@@ -8,6 +8,9 @@
 <loc>http://localhost:1236/</loc>
 </url>
 <url>
+<loc>http://localhost:1236/qrcode.html</loc>
+</url>
+<url>
 <loc>http://localhost:1236/test/index1.html</loc>
 <lastmod>2022-11-21T16:38:44+08:00</lastmod>
 </url>

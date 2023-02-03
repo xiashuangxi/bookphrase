@@ -2,14 +2,15 @@
     <div class="post-container-inner">
         <div class="post-meta">
             <div class="post-meta-inner">
-                <ul>
+                <ul style="margin-top: auto">
                     <!-- <li>
                         <div>讨论数：</div>
                         <div><a href="#">2323</a></div>
                     </li> -->
                     {% if page.category %}
                     <li>
-                        <div>分类：</div>
+                        <div class='mate-info'>分类</div>
+                        ：
                         <div>
                             {% for c in page.category%}
                                 <div>{{c}}</div>
@@ -18,18 +19,21 @@
                     </li>
                     {% endif %}
                     <li>
-                        <div>发布日期：</div>
+                        <div class='mate-info'>发布日期</div>
+                        ：
                         <div>{{ page.date |date: "%Y/%m/%d" }}</div>
                     </li>
                     {% if page.last_update %}
                     <li>
-                        <div>最近更新日期：</div>
-                        <div>{{ page.last_update | date: "%Y/%m/%d"}}</div>
+                        <div class='mate-info'>最近更新日期</div>
+                        ：
+                        <div><span id=""></span>{{ page.last_update | date: "%Y/%m/%d"}}</div>
                     </li>
                     {% endif %}
                 </ul>
                 <ul>
-
+                    <div id="qrcode" >
+                    </div>
                     {% if page.authors %}
                         {% for item in page.authors %}
                             <li>
@@ -44,6 +48,8 @@
                     <li><a href="mailto:{{site.email}}">{{ site.author }}</a></li>
                     {% endif %}
                 </ul>
+
+                
             </div>
         </div>
         <div class="post-content">
@@ -52,3 +58,30 @@
         </div>
     </div>
 </div>
+
+
+<script type="text/javascript">
+
+    var qrcode_page = function(url) {
+        document.location.target = '_blank';
+        document.location.href = '/qrcode.html?url='+url
+    }
+    // qrcode
+    $('#qrcode').qrcode(    
+        {
+            width: 100,
+            height: 100,
+            text: document.location.href.split("?")[0]
+        });
+    $("#qrcode").css({
+        width: 100,
+        height: 100, 
+        border: "2px solid black",
+        padding: "2px","margin-left": "auto",
+        'cursor': 'pointer',
+        "margin-bottom": "4px"});
+
+    document.getElementById('qrcode').onclick = function(){
+        qrcode_page(encodeURI(document.location.href.split("?")[0]))
+    }
+</script>

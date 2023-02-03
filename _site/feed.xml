@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:1236/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:1236/" rel="alternate" type="text/html" /><updated>2023-02-02T23:59:19+08:00</updated><id>http://localhost:1236/feed.xml</id><title type="html">Xia Shuangxi 的只言片语 (๑•̀ㅂ•́)و✧</title><subtitle>这个博客里记录的着各种主题的文章、知识和信息，也有一些对某些事物的不好或不符合实际的看法。不能保证所有的这些都是客观的和有用的。</subtitle><author><name>Xia Shuangxi</name></author><entry><title type="html">计算机编程有关的网络文章</title><link href="http://localhost:1236/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0.html" rel="alternate" type="text/html" title="计算机编程有关的网络文章" /><published>2020-05-15T00:00:00+08:00</published><updated>2020-05-15T00:00:00+08:00</updated><id>http://localhost:1236/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0</id><content type="html" xml:base="http://localhost:1236/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0.html">&lt;h1 id=&quot;rust相关&quot;&gt;Rust相关&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:1236/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:1236/" rel="alternate" type="text/html" /><updated>2023-02-03T16:23:56+08:00</updated><id>http://localhost:1236/feed.xml</id><title type="html">Xia Shuangxi 的只言片语 (๑•̀ㅂ•́)و✧</title><subtitle>这个博客里记录的着各种主题的文章、知识和信息，也有一些对某些事物的不好或不符合实际的看法。不能保证所有的这些都是客观的和有用的。</subtitle><author><name>Xia Shuangxi</name></author><entry><title type="html">计算机编程有关的网络文章</title><link href="http://localhost:1236/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0.html" rel="alternate" type="text/html" title="计算机编程有关的网络文章" /><published>2020-05-15T00:00:00+08:00</published><updated>2020-05-15T00:00:00+08:00</updated><id>http://localhost:1236/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0</id><content type="html" xml:base="http://localhost:1236/blog/posts/2020/05/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A8%8B%E6%9C%89%E5%85%B3%E7%9A%84%E7%BD%91%E7%BB%9C%E6%96%87%E7%AB%A0.html">&lt;h1 id=&quot;rust相关&quot;&gt;Rust相关&lt;/h1&gt;
 &lt;p&gt;多个作者发布在网上的独立Rust相关的文章。它们涵盖了Rust的各个方面。&lt;/p&gt;
 
 &lt;ol&gt;
@@ -34,6 +34,14 @@
 
     &lt;p&gt;作者：Markus Triska，这里是一个prolog的教程。&lt;/p&gt;
   &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://hanielb.github.io/2022.1-lp/12-prolog/problem-solving/#:~:text=Using%20Prolog%20we%20can%20solve%20this%20problem%20not,%2B%20resolution%20machinery%20compute%20the%20solution%20for%20us.&quot;&gt;使用Prolog解决问题&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;作者：Haniel Barbosa&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/&quot;&gt;九十九个Prolog问题&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h1 id=&quot;其他文章&quot;&gt;其他文章&lt;/h1&gt;
@@ -55,5 +63,8 @@
     &lt;p&gt;&lt;a href=&quot;https://dzone.com/articles/7-ways-to-boost-your-skills-to-become-a-better-pro&quot;&gt;提升技能成为更好程序员的7种方法&lt;/a&gt;&lt;/p&gt;
 
     &lt;p&gt;作者：Ralf Gallano&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://athena.ecs.csus.edu/~mei/logicp/home.html&quot;&gt;LOGIC PROGRAMMING A COURSEWARE（逻辑编程）&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;</content><author><name>Xia Shuangxi</name></author><category term="[&quot;计算机&quot;]" /><summary type="html">Rust相关 多个作者发布在网上的独立Rust相关的文章。它们涵盖了Rust的各个方面。</summary></entry></feed>

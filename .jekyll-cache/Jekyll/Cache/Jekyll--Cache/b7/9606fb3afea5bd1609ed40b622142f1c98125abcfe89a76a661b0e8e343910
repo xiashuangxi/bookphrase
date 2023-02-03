@@ -2,7 +2,7 @@
   "api_url": "https://api.github.com",
   "archived": false,
   "baseurl": "/pages/xiashuangxi/bookphrase",
-  "build_revision": "71305ba50ddbe5d5af386b40f4644cced44bb59e",
+  "build_revision": "23e68f1db8eaf9521ca982531151e3f0ac0ed023",
   "clone_url": "https://github.com/xiashuangxi/bookphrase.git",
   "contributors": [
     {
@@ -24,7 +24,7 @@
       "received_events_url": "https://api.github.com/users/xiashuangxi/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 39
+      "contributions": 40
     }
   ],
   "disabled": false,
@@ -1431,13 +1431,13 @@
       "deployments_url": "https://api.github.com/repos/xiashuangxi/bookphrase/deployments",
       "created_at": "2020-05-11 09:57:47 UTC",
       "updated_at": "2021-11-14 07:35:12 UTC",
-      "pushed_at": "2023-01-23 20:31:18 UTC",
+      "pushed_at": "2023-02-02 16:13:39 UTC",
       "git_url": "git://github.com/xiashuangxi/bookphrase.git",
       "ssh_url": "git@github.com:xiashuangxi/bookphrase.git",
       "clone_url": "https://github.com/xiashuangxi/bookphrase.git",
       "svn_url": "https://github.com/xiashuangxi/bookphrase",
       "homepage": null,
-      "size": 561,
+      "size": 565,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "JavaScript",

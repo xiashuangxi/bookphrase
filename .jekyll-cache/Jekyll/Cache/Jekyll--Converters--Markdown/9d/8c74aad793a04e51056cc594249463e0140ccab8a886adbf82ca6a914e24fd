@@ -1,4 +1,5 @@
-I"i<h1 id="rust相关">Rust相关</h1>
+I"�
+<h1 id="rust相关">Rust相关</h1>
 <p>多个作者发布在网上的独立Rust相关的文章。它们涵盖了Rust的各个方面。</p>
 
 <ol>
@@ -34,6 +35,14 @@
 
     <p>作者：Markus Triska，这里是一个prolog的教程。</p>
   </li>
+  <li>
+    <p><a href="https://hanielb.github.io/2022.1-lp/12-prolog/problem-solving/#:~:text=Using%20Prolog%20we%20can%20solve%20this%20problem%20not,%2B%20resolution%20machinery%20compute%20the%20solution%20for%20us.">使用Prolog解决问题</a></p>
+
+    <p>作者：Haniel Barbosa</p>
+  </li>
+  <li>
+    <p><a href="https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/">九十九个Prolog问题</a></p>
+  </li>
 </ol>
 
 <h1 id="其他文章">其他文章</h1>
@@ -55,6 +64,9 @@
     <p><a href="https://dzone.com/articles/7-ways-to-boost-your-skills-to-become-a-better-pro">提升技能成为更好程序员的7种方法</a></p>
 
     <p>作者：Ralf Gallano</p>
+  </li>
+  <li>
+    <p><a href="https://athena.ecs.csus.edu/~mei/logicp/home.html">LOGIC PROGRAMMING A COURSEWARE（逻辑编程）</a></p>
   </li>
 </ol>
 
