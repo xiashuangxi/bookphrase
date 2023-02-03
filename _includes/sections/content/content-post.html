@@ -61,10 +61,9 @@
 
 
 <script type="text/javascript">
-
     var qrcode_page = function(url) {
         document.location.target = '_blank';
-        document.location.href = '/qrcode.html?url='+url
+        document.location.href = '{{baseurl}}/qrcode.html?url='+url
     }
     // qrcode
     $('#qrcode').qrcode(    
