@@ -15,7 +15,7 @@ layout: site-qrcode
         {
             width: 200,
             height: 200,
-            text: document.location.href.split("?")[0]
+            text: getUrlParam("url")
         });
     $("#qrcode").css({
         width: 200,
