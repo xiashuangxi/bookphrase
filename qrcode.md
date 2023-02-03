@@ -1,7 +1,7 @@
 ---
 layout: site-qrcode
 ---
-
+{% include defines/defines.html %}
 <div style="margin:100px 0 100px 0;text-align: center;">
 	<div id='qrcode'></div>
 	<div id='url' style="color:#979797;margin: 4px 0 4px 0">纟纟xxxx</div>
