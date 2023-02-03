@@ -6,10 +6,17 @@ layout: site-qrcode
 	<div id='qrcode'></div>
 	<div id='url' style="color:#979797;margin: 4px 0 4px 0">纟纟xxxx</div>
 	<div>
-		<a href="/{{baseurl}}">返回首页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id="back_page" href="/">返回页面</a>
+		[<a href="{{baseurl}}/index.html" title="返回网站首页">首页</a>]
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		[<a id="back_page"  title="返回页面">返回页面</a>]
 	</div>
 </div>
 <script type="text/javascript">
+	var getUrlParam = function (name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) return unescape(r[2]); return null;
+	}
     // qrcode
     $('#qrcode').qrcode(
         {
@@ -26,11 +33,7 @@ layout: site-qrcode
         "margin-right": "auto",
     });
 
-    var getUrlParam = function (name) {
-		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-		var r = window.location.search.substr(1).match(reg);
-		if (r != null) return unescape(r[2]); return null;
-	}
+    
 
 	console.log(getUrlParam("url"))
 	document.getElementById('url').innerText=decodeURI( getUrlParam("url") );
