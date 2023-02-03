@@ -6,7 +6,7 @@ layout: site-qrcode
 	<div id='qrcode'></div>
 	<div id='url' style="color:#979797;margin: 4px 0 4px 0">纟纟xxxx</div>
 	<div>
-		<a href="/">返回首页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id="back_page" href="/">返回页面</a>
+		<a href="{{baseurl  | strip_html }}">返回首页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id="back_page" href="/">返回页面</a>
 	</div>
 </div>
 <script type="text/javascript">
