@@ -28,7 +28,7 @@ layout: site-qrcode
         width: 200,
         height: 200, 
         border: "4px solid black",
-        padding: "2px",
+        padding: "6px",
         "margin-left": "auto",
         "margin-right": "auto",
     });
