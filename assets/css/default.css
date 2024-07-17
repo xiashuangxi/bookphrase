@@ -246,7 +246,11 @@ a::after{
 
 .post-content .post-content-article-content{
     padding: 0px;
-    padding-left: 24px;
+    /** padding-left: 24px; */
+}
+
+.post-content .post-content-article-content h1 + p{
+    padding-left: 0px;
 }
 .header-inner h3,
 .post-content .post-content-article-content h1,
